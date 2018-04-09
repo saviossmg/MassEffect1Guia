@@ -1,0 +1,204 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background2"
+    tools:context="com.saviosvm.masseffect1guia.view.fragment.Perfil">
+
+    <ImageView
+        android:id="@+id/perfil_perfilPerso"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/n7logo"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_horizontal_h35"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_vertical_v70"
+        app:layout_constraintStart_toStartOf="@+id/perfil_vertical_v30"
+        app:layout_constraintTop_toTopOf="@+id/perfil_horizontal_h05"
+
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_horizontal_h80"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_vertical_v90"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/perfil_vertical_v10"
+        app:layout_constraintTop_toTopOf="@+id/perfil_horizontal_h40"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/perfil_nomePerso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/perfil_perfilPerso"
+            android:text="Nome Perso"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/perfil_aglomExp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:freezesText="false"
+            android:text="Algomerados"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/perfil_sistemasExp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:freezesText="false"
+            android:text="Sistemas"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/perfil_totalCompletado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/perfil_sistemasExp"
+            android:layout_marginTop="20dp"
+            android:freezesText="false"
+            android:text="Total completo"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/perfil_btnDeletar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_vermelho"
+        android:onClick="botaoDeletar"
+        android:text="@string/perfil_deletar"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_horizontal_h90"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_vertical_v40"
+        app:layout_constraintStart_toStartOf="@+id/perfil_vertical_v10"
+        app:layout_constraintTop_toTopOf="@+id/perfil_horizontal_h80"
+        />
+
+    <Button
+        android:id="@+id/perfil_btnSair"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toEndOf="@+id/perfil_perfilPerso"
+        android:layout_toRightOf="@+id/perfil_perfilPerso"
+        android:background="@drawable/btn_azul"
+        android:onClick="perfilSair"
+        android:text="@string/perfil_sair"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_horizontal_h90"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_vertical_v90"
+        app:layout_constraintStart_toStartOf="@+id/perfil_vertical_v60"
+        app:layout_constraintTop_toTopOf="@+id/perfil_horizontal_h80"
+        />
+
+
+    <!--
+
+                <Button
+                    android:id="@+id/perfil_btnSair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/perfil_totalCompletado"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toEndOf="@+id/perfil_perfilPerso"
+                    android:layout_toRightOf="@+id/perfil_perfilPerso"
+                    android:background="@color/botoes"
+                    android:onClick="perfilSair"
+                    android:text="Sair"
+                    android:textColor="@android:color/white" />
+    -->
+
+
+    <!-- horizontal -->
+    <android.support.constraint.Guideline
+        android:id="@+id/perfil_horizontal_h05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/perfil_horizontal_h35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/perfil_horizontal_h40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/perfil_horizontal_h80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/perfil_horizontal_h90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <!-- vertical -->
+
+    <android.support.constraint.Guideline
+        android:id="@+id/perfil_vertical_v10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/perfil_vertical_v30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/perfil_vertical_v40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/perfil_vertical_v60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/perfil_vertical_v70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/perfil_vertical_v90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+</android.support.constraint.ConstraintLayout>

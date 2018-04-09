@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#202020</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="corBranca">#06d1c0</color>
+    <color name="corPrata">#595959</color>
+    <color name="textoNaoSelecionado">#d9d9d9</color>
+    <color name="testoHint">#a2cfcfcf</color>
+    <color name="fundoLista">#28bababa</color>
+    <color name="listaSelecionada">#1ebababa</color>
+    <color name="btnazul">#bb184461</color>
+    <color name="btnverde">#bb2f910f</color>
+    <color name="btncinza">#bb949494</color>
+    <color name="btnvermelho">#bbde1a1a</color>
+
+    <color name="letra_lista1">#06d1c0</color>
+    <color name="letra_lista2">#0064f5</color>
+    <color name="letra_check1">#ff1414</color>
+    <color name="letra_check2">#b41414</color>
+
+</resources>

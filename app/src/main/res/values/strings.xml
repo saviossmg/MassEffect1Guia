@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mass Effect 1 Guia</string>
+    <string name="splash_titulo">O Guia</string>
+    <string name="login_selecione">Selecione o(a) personagem</string>
+    <string name="login_entrar">Entrar</string>
+    <string name="login_criar">Criar Personagem</string>
+    <string name="login_sobre">Sobre</string>
+    <string name="criar_nome">Nome do personagem</string>
+    <string name="criar_salvar">Salvar</string>
+    <string name="perfil_deletar">Deletar</string>
+    <string name="perfil_sair">Sair</string>
+    <string name="lista_aglo">Aglomerados Visitados</string>
+    <string name="lista_sist">Sistemas Visitados</string>
+    <string name="checkin_aglo">Aglomerados</string>
+    <string name="checkin_sist">Sistemas</string>
+
+</resources>

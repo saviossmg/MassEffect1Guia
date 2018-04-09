@@ -1,0 +1,119 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background2"
+    tools:context="com.saviosvm.masseffect1guia.view.fragment.Checkin">
+
+    <TextView
+        android:id="@+id/checkin_labelAglo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/checkin_aglo"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkin_horizontal_h08"
+        app:layout_constraintEnd_toEndOf="@+id/checkin_vertical_v48"
+        app:layout_constraintStart_toStartOf="@+id/checkin_vertical_v05"
+        app:layout_constraintTop_toTopOf="@+id/checkin_horizontal_h02" />
+
+    <ListView
+        android:id="@+id/checkin_listaAglo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/fundoLista"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@color/listaSelecionada"
+        app:layout_constraintBottom_toBottomOf="@+id/checkin_horizontal_h98"
+        app:layout_constraintEnd_toEndOf="@+id/checkin_vertical_v48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkin_horizontal_h10"
+        />
+
+    <TextView
+        android:id="@+id/checkin_labelSistemas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/checkin_sist"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkin_horizontal_h08"
+        app:layout_constraintEnd_toEndOf="@+id/checkin_vertical_v95"
+        app:layout_constraintStart_toStartOf="@+id/checkin_vertical_v52"
+        app:layout_constraintTop_toTopOf="@+id/checkin_horizontal_h02" />
+
+    <ListView
+        android:id="@+id/checkin_listaSist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/fundoLista"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@color/listaSelecionada"
+        app:layout_constraintBottom_toBottomOf="@+id/checkin_horizontal_h98"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/checkin_vertical_v52"
+        app:layout_constraintTop_toTopOf="@+id/checkin_horizontal_h10" />
+
+    <!-- horizontal -->
+    <android.support.constraint.Guideline
+        android:id="@+id/checkin_horizontal_h02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/checkin_horizontal_h08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/checkin_horizontal_h10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/checkin_horizontal_h98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <!-- vertical -->
+    <android.support.constraint.Guideline
+        android:id="@+id/checkin_vertical_v05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/checkin_vertical_v48"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/checkin_vertical_v52"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/checkin_vertical_v95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saviosvm.masseffect1guia">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/n7logo"
+        android:label="Mass Effect 1 - Guia"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/n7logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.activity.SplashScrenn"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.Principal"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.CriarPersonagem"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".view.activity.Principal">
+
+            <!-- Parent activity -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.Principal" />
+        </activity>
+        <activity
+            android:name=".view.activity.Menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".view.activity.Sobre"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".view.activity.Principal">
+
+                <!-- Parent activity -->
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".view.activity.Principal" />
+        </activity>
+    </application>
+
+</manifest>

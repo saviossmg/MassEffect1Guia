@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context="com.saviosvm.masseffect1guia.view.activity.CriarPersonagem">
+
+
+    <ImageView
+        android:id="@+id/criar_imgPerso"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/criar_horizontal_h45"
+        app:layout_constraintEnd_toEndOf="@+id/criar_vertical_v80"
+        app:layout_constraintStart_toStartOf="@+id/criar_vertical_v20"
+        app:layout_constraintTop_toTopOf="@+id/criar_horizontal_h05"
+        app:srcCompat="@drawable/msheppard" />
+
+
+    <EditText
+        android:id="@+id/criar_nomePerso"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/criar_nome"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/criar_horizontal_h5725"
+        app:layout_constraintEnd_toEndOf="@+id/criar_vertical_v90"
+        app:layout_constraintStart_toStartOf="@+id/criar_vertical_v10"
+        app:layout_constraintTop_toTopOf="@+id/criar_horizontal_h50"
+        tools:background="@android:color/transparent" />
+
+    <RadioGroup
+        android:id="@+id/criar_genero"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/criar_horizontal_h75"
+        app:layout_constraintEnd_toEndOf="@+id/criar_vertical_v90"
+        app:layout_constraintStart_toStartOf="@+id/criar_vertical_v10"
+        app:layout_constraintTop_toTopOf="@+id/criar_horizontal_h60">
+
+        <RadioButton
+            android:id="@+id/criar_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Masculino"
+            android:textColor="@android:color/darker_gray" />
+
+        <RadioButton
+            android:id="@+id/criar_f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feminino"
+            android:textColor="@android:color/darker_gray" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/criar_btnSalvar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/btn_vermelho"
+        android:onClick="salvarPersonagem"
+        android:text="@string/criar_salvar"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/criar_horizontal_h90"
+        app:layout_constraintEnd_toEndOf="@+id/criar_vertical_v65"
+        app:layout_constraintStart_toStartOf="@+id/criar_vertical_v35"
+        app:layout_constraintTop_toTopOf="@+id/criar_horizontal_h80" />
+
+
+    <!-- horizontal -->
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_horizontal_h05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_horizontal_h45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_horizontal_h50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_horizontal_h5725"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5725" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_horizontal_h60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_horizontal_h75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_horizontal_h80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_horizontal_h90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <!-- vertical -->
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_vertical_v10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_vertical_v20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_vertical_v35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_vertical_v65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_vertical_v80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_vertical_v90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/criar_vertical_v95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+</android.support.constraint.ConstraintLayout>

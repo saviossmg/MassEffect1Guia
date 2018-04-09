@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.saviosvm.masseffect1guia.view.activity.SplashScrenn">
+
+    <ImageView
+        android:id="@+id/splash_imgPrincipal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_guideline_h60"
+        app:layout_constraintEnd_toEndOf="@+id/splash_guideline_v90"
+        app:layout_constraintStart_toStartOf="@+id/splash_guideline_v10"
+        app:layout_constraintTop_toTopOf="@+id/splash_guideline_h25"
+        app:srcCompat="@drawable/melogo" />
+
+    <TextView
+        android:id="@+id/splash_texto"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/splash_titulo"
+        android:textAlignment="gravity"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_guideline_h80"
+        app:layout_constraintEnd_toEndOf="@+id/splash_guideline_v75"
+        app:layout_constraintStart_toStartOf="@+id/splash_guideline_v25"
+        app:layout_constraintTop_toTopOf="@+id/splash_guideline_h60" />
+
+    <!-- horizontal -->
+
+    <android.support.constraint.Guideline
+        android:id="@+id/splash_guideline_h25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/splash_guideline_h60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/splash_guideline_h80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <!-- vertical -->
+
+    <android.support.constraint.Guideline
+        android:id="@+id/splash_guideline_v10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/splash_guideline_v25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/splash_guideline_v75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/splash_guideline_v90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+</android.support.constraint.ConstraintLayout>
